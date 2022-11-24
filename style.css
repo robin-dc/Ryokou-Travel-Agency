@@ -1,0 +1,580 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Exo 2', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* =========================================================== NAVIGATION */
+nav ul li a{
+    font-weight: 600;
+}
+.nav-wrapper li a{
+    position: relative;
+}
+.nav-wrapper li a::after{
+    content:'';
+    height:2px;
+    width:100%;
+    position:absolute;
+    bottom: 0;
+    left:0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+}
+.nav-wrapper li a:hover::after{
+    transform: scaleX(1);
+}
+.nav-wrapper .btn{
+    position: relative;
+}
+.nav-wrapper .btn::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.185);
+    top:0;
+    left:0;
+    transform-origin: right;
+}
+.nav-wrapper .btn:hover::after{
+    transform-origin: left;
+}
+.dropdown-trigger{
+    display:flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.brand-logo{
+    display:flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap:.5rem !important;
+    font-weight: 600;
+    font-size:clamp(2rem,2vw,2rem);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Exo 2', sans-serif; */
+}
+
+.active.scrolled{
+    background-image: url(images/extra/kanagawa.jpg);
+    background-position-y: 64%;
+    background-color: rgba(0, 0, 0, 0.89) !important;
+    background-blend-mode: multiply;
+    transition: 1s !important;
+
+}
+.active.scrolled .logo-img{
+    background-image: url(images/logos/logo.png) !important;
+    transform: rotate(-360deg);
+    transition: .5s !important;
+}
+.logo-img{
+    width:3rem !important;
+    height:3rem !important;
+    background-image: url(images/logos/logo6.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    transition: .5s !important;
+}
+.logo-img2{
+    width:6rem !important;
+    height:6rem !important;
+    background-image: url(images/logos/logo5.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.6rem;
+}
+.modal{
+    padding:3rem 0 !important;
+}
+
+
+.modal .container .modal-header a{
+    position: absolute;
+    right:.7rem;
+    top:.7rem;
+}
+
+/* =========================================================== CAROUSEL SECTION 1 */
+.slider{
+    margin-top: -4.5rem;
+    background-color:black !important;
+}
+.slides{
+    position:relative;
+    background-color:black !important;
+}
+.slides video{
+   opacity: 0.6 !important;
+}
+.slider .slides li .caption{
+    position:absolute !important;
+    left:50% !important;
+    top:40% !important;
+    transform: translate(-50%, -50%) !important;
+    width:60%;
+}
+.center-video{
+    object-fit: cover !important;
+    width:100%;
+    height:100% !important;
+}
+.slider h1{
+    font-size: clamp(4rem, 7vw, 7rem) !important;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px black;
+}
+.gradient{
+    z-index: 2 !important;
+    width:100%;
+    position: absolute;
+    bottom:-8px;
+}
+
+/* ============================================================ TABS SECTION 2 */
+.tabs{
+    text-align: left;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.274) !important;
+}
+.tabs .indicator{
+    background-color: red !important;
+}
+.tabs li a{
+    color: white !important;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background: transparent !important;
+}
+.section-tabs{
+    padding:5rem 5rem 10rem 5rem !important;
+}
+h4,p{
+    padding:0 !important;
+    margin:0 !important;
+}
+/* .tab-title{
+    padding:1rem 0 3rem;
+} */
+h3{
+    font-size: clamp(2.5rem, 3.6vw, 4rem);
+    margin-bottom: 2rem !important;
+    font-weight:700;
+}
+h2{
+    font-size: clamp(2.8rem, 3.2vw, 4rem);
+    margin-bottom: 2rem !important;
+    font-weight:700;
+    margin-top: 0;
+}
+p{
+    font-weight:600 !important;
+}
+.tabs li a{
+    font-weight: 700;
+    font-size: clamp(.9rem, 1vw, 1rem) !important;
+}
+
+/* ====================================================== TABS CARDS */
+.section-tabs .card{
+    margin-top: 3rem !important;
+    position: relative !important;
+}
+/* .card:hover{
+    scale:1.1;
+    transition: 1s;
+} */
+.section-tabs .card p{
+    font-size: 1rem !important;
+}
+.section-tabs .card h3{
+    margin: 0 !important;
+}
+.section-tabs .card-h3{
+    font-weight: 700;
+}
+.section-tabs .card-title{
+    background-color: rgba(0, 0, 0, 0.747);
+    padding: 1rem 0.5rem 3rem !important;
+    text-align: center;
+    width:100%;
+}
+.section-tabs .number{
+    font-size:clamp(3.1rem,4vw,4.5rem);
+    position: absolute;
+    top:0;
+    width:100%;
+    height:20% !important;
+    padding-left:1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.705), transparent);
+}
+/* ====================================================== BOOKING FORM INPUT */
+.section-book{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 !important;
+    margin: 0 !important;
+    z-index: 1;
+    width:90%;
+    margin: 0 auto !important;
+}
+.section-book > *{
+    padding:0 !important;
+    margin:0 !important;
+}
+.section-book .container{
+    position: absolute;
+    border-radius: 1rem;
+    padding:2rem 0 !important;
+    width:100%;
+}
+.section-book .container .row{
+    margin: 0 !important;
+}
+input{
+    font-weight: 500 !important;
+}
+input[type=text]+label.active
+{
+    position: absolute;
+    top:-.4rem;
+}
+.section-book .input-field{
+    padding-right:1.8rem;
+    border-radius: .5rem;
+}
+.section-book .col:last-child .input-field{
+    padding:0 !important;
+}
+
+.section-book .input-field .inquire{
+    height:3.5rem !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-book .input-field .prefix.active {
+    color: #a21318;
+}
+.autocomplete-content{
+    width:200px !important;
+}
+.autocomplete-content li>*{
+    color:gray !important;
+}   
+/* ========================================================= FIXED BUTTON BACK TO TOP */
+.fixed-action-btn a{
+    opacity:0.8;
+    animation:bounce 2s ease-in infinite;
+}
+
+@keyframes bounce{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+/* ========================================================= SECTION ADVENTURE */
+.section-adventure{
+    padding: 5rem 0 4rem !important; 
+}
+.section-adventure .card{
+    border: 1px solid rgba(255, 255, 255, 0.443);
+    border-radius: .5rem;
+    padding: 1rem 0;
+    display:grid;
+    place-items: center;
+}
+.section-adventure .card p{
+    color: #ffffff7a !important;
+
+}
+.section-adventure .card-image,.section-adventure .card-content {
+    padding:0 !important;
+    margin:0 !important;
+}
+.section-adventure .card img{
+    width:7rem;
+}
+/* ========================================================= CAROUSEL AT THE BOTTOM */
+.section-carousel{
+    padding: 5rem 0 !important;
+}
+.carousel-item i{
+    width:2rem;
+    height:2rem;
+    display:grid;
+    place-items: center;
+    border-radius: 100%;
+}
+
+.carousel-item{
+    transition: all .2s;
+    transform: rotate(0deg);
+}
+.carousel-item:hover{
+    transform: rotate(-360deg);
+}
+.carousel-item .card-content{
+    padding: 3rem 1.2rem 2rem !important;
+    position: relative;
+}
+.carousel-item .floating-div{
+    position: absolute;
+    top:-20px;
+    z-index: 1;
+    left:50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: .3rem;
+    padding:.6rem 1rem;
+    width:80%;
+    display:grid;
+    place-items: center;
+}
+.carousel-item .floating-div small{
+    display: flex;
+}
+.section-carousel .card-title{
+    font-weight: 800 !important;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.658), black);
+    -webkit-background-clip: text;
+    color:transparent;  
+}
+.section-carousel .card-image{
+    position: relative;
+    overflow: hidden;
+}
+.section-carousel .card-image::after{
+    content: '50% off';
+    position: absolute;
+    top:20px;
+    right:-45px;
+    padding:.2rem 1rem;
+    width:50%;
+    display:grid;
+    color:white;
+    font-weight: 500;
+    place-items: center;
+    transform: rotate(45deg);
+    background-color: #a21318;
+    box-shadow: 0 0 7px black;
+}
+/* ========================================================= FREQUENTLY ASK QUESTIONS */
+.collapsible-header{
+    position:relative;
+}
+.expand{
+    position:absolute;
+    right:1rem;
+}
+
+.section-faq{
+    padding:13rem 0rem 7rem !important;
+    position: relative;
+}
+.gradient-black{
+    position: absolute;
+    width:100%;
+    top:0rem;
+    left:0;
+}
+
+/* ========================================================= SECTION PHOTOS */
+
+.section-photos {
+    padding: 5rem 0 !important; 
+}
+
+.section-photos .col {
+    overflow: hidden;
+}
+.section-photos .container .row{
+    gap:3rem !important;
+}
+
+.section-photos .col img, .section-photos .col iframe{
+    width:100%;
+    object-fit: cover !important;
+}
+.section-photos .row .col:last-child{
+    padding-top: 1rem;
+}
+/* ========================================================= FOOTER LINKS*/
+.mail li{
+    margin-bottom:.6rem;
+}
+.mail li a{
+    display:flex !important;
+    align-items: center;
+    gap:.8rem !important;
+}
+.social-media{
+    display: flex !important;
+    gap:1rem;
+}
+.social-media li a i{
+    font-size: 1.3rem;
+}
+.section-footlinks{
+    padding-top: 4rem !important;
+}
+.section-footlinks .row div:nth-child(2) p .new-line{
+    display: block;
+    margin-top: 1rem !important;
+}
+footer{
+    padding: 0 0 3rem !important;
+    margin-top: 0 !important;
+}
+.footer-title{
+    font-weight: 600;
+}
+footer .container{
+    border-top: 1px solid rgba(255, 255, 255, 0.548);
+    padding-top: 1rem !important;
+}
+footer .row{
+    margin: 0 !important;
+}
+/* =========================================================================== */
+
+@media only screen and (max-width: 900px){
+   .section-tabs{
+    padding:5rem 0rem 20rem 0rem !important;
+    }
+    .section-faq{
+        padding:8rem 0 5rem !important;
+    }
+    .slider .slides li .caption{
+        width:90%;
+    }
+    .collapsible li{
+        width:100% !important;
+        margin:0 auto !important;
+    }
+    .section-footlinks .row div{
+        margin-top: 2rem !important;
+    }
+    .section-footlinks .row div:nth-child(2) p{
+        width: 90%;
+        margin:0 auto !important;
+    }
+    .section-footlinks .row div:nth-child(2) p .new-line{
+        margin-top: 0 !important;
+    }
+    .section-footlinks .container ul{
+        display:grid;
+        place-items: center;
+        width: 100%;
+    }
+    .section-footlinks .container .social-media{
+        justify-content: center;
+    }
+    .section-footlinks p, .section-footlinks .container ul li a, .section-footlinks h5, footer p{
+        text-align: center !important;
+        width:100%;
+    }
+
+    .section-contact .input-field{
+        padding: 0 0 !important;
+    }
+    .section-contact input+label, .section-contact textarea+label{
+        margin-left: 0 !important;
+    }
+    .btn-submit{
+        display:flex;
+        justify-content: center;
+    }
+
+
+}
+
+.section-contact{
+    position: relative;
+    overflow: hidden;
+    padding:5rem 0;
+}
+
+.section-contact .container{
+    display:grid;
+}
+.section-contact .container .row{
+    padding:2rem 1rem 1rem;
+    z-index: 2;
+    border-radius: .5rem;
+}
+.section-contact .container .row .col{
+    border-radius: .5rem;
+}
+.section-contact .input-field{
+    border-radius: .3rem;
+    padding: 0 2rem;
+}
+.section-contact .row .column1:first-child .row .col:last-child .input-field    {
+    padding: 1rem 0 0 0 !important;
+    margin:0 !important;
+}
+.section-contact input+label, .section-contact textarea+label{
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.map-vid{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.section-contact .container .column1{
+    padding: 2rem;
+    height:100% !important;
+}
+.section-contact .glassmorphism{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 16px );
+    -webkit-backdrop-filter: blur( 16px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.section-contact .mail i{
+    color:#a21318;
+    width:2.6rem;
+    height:2.6rem;
+    display:grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.section-contact .social-media i{
+    width:2.5rem;
+    height:2.5rem;
+}
+
+/* #a21318 */

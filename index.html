@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ryokou | Experience Japan With Us.</title>
+    <link rel="shortcut icon" href="images/logos/favicon3.png" type="image/x-icon">
+    <link rel="stylesheet" href="material.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="grey lighten-5">
+    <!-- NAVIGATION BAR -->
+    <header class="navbar-fixed">
+        <nav class="nav-wrapper transparent active">
+            <div class="container row">
+                    <a href="index.html" class="brand-logo">
+                        <div class="logo-img"></div>
+                        ryokou</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class=" right hide-on-med-and-down">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#popular">POPULAR</a></li>
+                        <li><a href="#book" class="white-text">BOOKING</a></li>
+                        <li><a class="dropdown-trigger" data-target="dropdown1">MORE
+                            <i class="material-icons">arrow_drop_down</i>
+                        </a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="#modal1" class="btn red waves-effect darken-3 modal-trigger">EXPLORE</a></li>
+                    </ul>   
+            </div>
+        </nav>
+    </header>
+
+    <!-- MOBILE NAVIGATION -->
+    <ul class=" sidenav hide-on-med-and-up" id="mobile-nav">
+        <li><div class="user-view">
+            <div class="background">
+              <img src="images/extra/kanagawa.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="images/extra/winter.jpg"></a>
+            <a href="#name"><span class="black-text name">Minjeong "Winter" Kim</span></a>
+            <a href="#email"><span class="black-text email">wintot07@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#popular">POPULAR</a></li>
+        <li><a href="#book">BOOKING</a></li>
+        <li><a href="#activity">ACTIVITY</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#places">PLACES</a></li>
+        <li><a href="#photos">PHOTOS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#modal1" class="btn red waves-effect darken-3 modal-trigger">EXPLORE</a></li>
+    </ul>
+
+    <!-- DROPDOWN -->
+    <ul id='dropdown1' class='dropdown-content black'>
+        <li><a href="#activity" class="white-text">ACTIVITY</a></li>
+        <li><a href="#faq" class="white-text">FAQ</a></li>
+        <li><a href="#places" class="white-text">PLACES</a></li>
+        <li><a href="#photos" class="white-text">PHOTOS</a></li>
+    </ul>
+
+    <!-- MODAL POP UP -->
+    <div class="modal" id="modal1">
+        <div class="container">
+            <div class="modal-header right">
+                <a class="btn red darken-3 waves-effect btn-floating modal-close"><i class="material-icons">close</i></a>
+            </div>
+            <div class="modal-content">
+                <a href="index.html" class="brand-logo black-text">
+                    <div class="logo-img2"></div></a>
+                <h3 class="black-text center">Enjoy 30% off</h3>
+                <p class="black-text center">Accessible, Affordable, Fast</p>
+                <div class="input-field">
+                    <input type="email" placeholder="Enter your email adress to claim the coupon" required class="center">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#book" class="btn red darken-3 waves-effect modal-close" onclick="removeInput()">SCHEDULE A TRIP</a>
+            </div>
+            <p class="black-text center"><small>
+                *By completing this form, you agree to receive emails from us and can unsubscribe at any time.
+            </small></p>
+        </div>
+    </div>
+
+    <!-- CAROUSEL -->
+    <section class="slider scrollspy" id="home">
+        <ul class="slides">
+            <li>
+                <video src="images/videos/vid8.2.mp4" loop autoplay muted class="center-video"></video>
+                <div class="caption center-align">
+                    <h1>EXPAND YOUR <br> JOURNEY</h1>
+                    <p>Where to go? What to do? Get started, explore the life you want to live.</p>
+                </div>
+            </li>
+            <li>
+                <video src="images/videos/vid2.mp4" loop autoplay muted class="center-video"></video>
+                <div class="caption center-align">
+                    <h1>TRAVEL AROUND <br> JAPAN</h1>
+                    <p>Endless Discovery: Adventure and Discovery is worthwhile and endless, travel far enough, seek for yourself, seek other places, seek other lives, other souls, and culture.</p>
+                </div>
+            </li>
+            <li>
+                <video src="images/videos/vid1.mp4" loop autoplay muted class="center-video"></video>
+                <div class="caption center-align">
+                    <h1>EXPERIENCE <br> TOKYO</h1>
+                    <p>Tokyo Tokyo Old meets New: Tokyo has it all, leading the way in technological advancements while upholding its deeply ingrained traditions.</p>
+                </div>
+            </li>
+            <li>
+                <video src="images/videos/vid4.mp4" loop autoplay muted class="center-video"></video>
+                <div class="caption center-align">
+                    <h1>VISIT <br> OSAKA</h1>
+                    <p>Venice of the East: Blends ancient history with ultra-modern attractions, Japan's third largest and most fun-loving city.</p>
+                </div>
+            </li>
+            <li>
+                <video src="images/videos/vid5.mp4" loop autoplay muted class="center-video"></video>
+                <div class="caption center-align">
+                    <h1>DISCOVER <br> KYOTO</h1>
+                    <p>Visit Kyoto to experience its wonders and to enrich your travels with its history, culture, and untouched nature.</p>
+                </div>
+            </li>
+        </ul>
+        <img src="images/extra/grad2.png" alt="" class="gradient">
+    </section>
+
+    <!-- TABS PLACES -->
+    <section class="row container section section-tabs grey lighten-5">
+        <div class="tab-title">
+            <p class="center black-text">We've selected some popular tourist spots for you.</p>
+            <h2 class="center black-text">POPULAR SPOTS</h2>
+        </div>
+        <div class="col s12">
+            <ul class="tabs scrollspy grey lighten-5" id="popular">
+                <li class="tab col s4"><a href="#kyoto"><span class="red-text">京都</span> <span class="black-text"> KYOTO </span> <span class="red-text">京都</span></a></li>
+                <li class="tab col s4"><a href="#osaka"><span class="red-text">大阪</span> <span class="black-text"> OSAKA </span><span class="red-text">大阪</span></a></li>
+                <li class="tab col s4"><a href="#tokyo"><span class="red-text">東京</span> <span class="black-text"> TOKYO </span> <span class="red-text">東京</span></a></li>
+            </ul>
+        </div>
+
+        <div id="tokyo">
+            <div class="col s12 m4" data-aos="fade-right" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/tokyo/meiji.jpg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Meiji Shrine</span> <br>
+                        <p class="grey-text text-lighten-1">Shrine dedicated to the deified spirits of Emperor
+                            Meiji and Empress Shoken</p></h3>
+                        <font class="number white-text">01</font>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/tokyo/tokyo2.jpeg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Shibuya City</span> <br>
+                        <p class="grey-text text-lighten-1">Center for youth fashion, culture, entertainment and fashion trends</p></h3>
+                        <font class="number white-text">02</font>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" data-aos="fade-left" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/tokyo/tokyo3.jpg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Illuminated tower</span> <br>
+                        <p class="grey-text text-lighten-1">180 lights that make up the typical light-up that illuminates Tokyo Tower</p></h3>
+                        <font class="number white-text">03</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="osaka">
+            <div class="col s12 m4" data-aos="fade-right" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/osaka/osaka1.jpg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Tsutenkaku Tower</span> <br>
+                        <p class="grey-text text-lighten-1">Representation of Naniwa with the Osaka version of the Eiffel Tower</p></h3>
+                        <font class="number white-text">01</font>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/osaka/osaka2.jpg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Osaka Castle</span> <br>
+                        <p class="grey-text text-lighten-1">Impressively well-built stone wall, astonishing in its sheer magnitude</p></h3>
+                        <font class="number white-text">02</font>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" data-aos="fade-left" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/osaka/osaka3.jpg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Super Nintendo World</span> <br>
+                        <p class="grey-text text-lighten-1">Team up with pals to combat rivals and grow stronger</p></h3>
+                        <font class="number white-text">03</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kyoto">
+            <div class="col s12 m4" data-aos="fade-right" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/kyoto/kyoto1.jpeg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Fushimi Inari Shrine</span> <br>
+                        <p class="grey-text text-lighten-1">Inari's Head Temple that can be found in the Kyoto Prefecture.</p></h3>
+                        <font class="number white-text">01</font>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/kyoto/kyoto2.jpeg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Katsura Imperial Villa</span> <br>
+                        <p class="grey-text text-lighten-1">Imperial home with accompanying gardens and outbuildings.</p></h3>
+                        <font class="number white-text">02</font>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4" data-aos="fade-left" data-aos-duration="2000">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/kyoto/kyoto3.jpeg" alt="" class="materialboxed">
+                        <h3 class="card-title"><span class="card-h3">Aoi Matsuri</span> <br>
+                        <p class="grey-text text-lighten-1 ">One of the three most significant festivals in Kyoto</p></h3>
+                        <font class="number white-text">03</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="section section-book grey lighten-5 center scrollspy">
+        <div class="container white z-depth-4" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="row">
+                <div class="col s10 offset-m1 left-align">
+                    <p>Explore the wonder through japan.</p>
+                    <h2>BOOK <span class="red-text text-darken-3">NOW</span></h2>
+                    <p>Make your reservations as soon as possible, these are limited slots only.</p>
+                </div>
+                <div class="col s12 m2 offset-m1">
+                    <div class="input-field grey lighten-3">
+                        <i class="material-icons prefix">place</i>
+                        <input type="text" class="red-text text-darken-3 autocomplete" id="autocomplete-input">
+                        <label for="autocomplete-input"> Enter Destination</label>
+                    </div>
+                </div>
+                <div class="col s12 m2">
+                    <div class="input-field grey lighten-3">
+                        <i class="material-icons prefix">group</i>
+                        <input type="text" class="red-text text-darken-3 people" id="people">
+                        <label for="people"> No. of People</label>
+                    </div>
+                </div>
+                <div class="col s12 m2">
+                    <div class="input-field grey lighten-3">
+                        <i class="material-icons prefix">event_available</i>
+                        <input type="text" class="red-text text-darken-3 datepicker" id="date-1">
+                        <label for="date-1"> Checkin Date</label>
+                    </div>
+                </div>
+                <div class="col s12 m2">
+                    <div class="input-field grey lighten-3">
+                        <i class="material-icons prefix">event_busy</i>
+                        <input type="text" class="red-text text-darken-3 datepicker" id="date-2">
+                        <label for="date-2"> Checkout Date</label>
+                    </div>
+                </div>
+                <div class="col s12 m2">
+                    <div class="input-field center-align">
+                        <a class="btn red waves-effect darken-3 inquire" onclick="M.toast({html: 'You already secure your booking!'})" id="inquire-btn">INQUIRE NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="images/extra/kanagawa.jpg" alt="">
+        </div>
+    </div>
+
+    <section class="section section-adventure black scrollspy" id="activity" >
+        <div class="container">
+            <div class="adventure-title">
+                <p class="center white-text">Its impossible to be bored during this trip!</p>
+                <h2 class="center white-text">ADVENTURE AND ACTIVITY</h2>
+            </div>
+            <div class="row">
+                <div class="col s6 l2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card black">
+                        <div class="card-image">
+                            <img src="images/adventure/adventure.png">
+                          </div>
+                          <div class="card-content">
+                            <h5 class="white-text center">Adventure</h5>
+                            <p class="white-text center">15 Destination</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col s6 l2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card black">
+                        <div class="card-image">
+                            <img src="images/adventure/trekking.png">
+                          </div>
+                          <div class="card-content">
+                            <h5 class="white-text center">Trekking</h5>
+                            <p class="white-text center">12 Destination</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col s6 l2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card black">
+                        <div class="card-image">
+                            <img src="images/adventure/campfire.png">
+                          </div>
+                          <div class="card-content">
+                            <h5 class="white-text center">Camp Fire</h5>
+                            <p class="white-text center">7 Destination</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col s6 l2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card black">
+                        <div class="card-image">
+                            <img src="images/adventure/offroad.png">
+                          </div>
+                          <div class="card-content">
+                            <h5 class="white-text center">Off Road</h5>
+                            <p class="white-text center">15 Destination</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col s6 l2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card black">
+                        <div class="card-image">
+                            <img src="images/adventure/camping.png">
+                          </div>
+                          <div class="card-content">
+                            <h5 class="white-text center">Camping</h5>
+                            <p class="white-text center">13 Destination</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="col s6 l2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card black">
+                        <div class="card-image">
+                            <img src="images/adventure/exploring.png">
+                          </div>
+                          <div class="card-content">
+                            <h5 class="white-text center">Exploring</h5>
+                            <p class="white-text center">25 Destination</p>
+                          </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="section section-faq scrollspy grey lighten-5" id="faq">
+        <div class="container">
+            <img src="images/extra/grad2 black.png" alt="" class="gradient-black">
+            <p class="center">Don't miss out the fun! We will help you answer some questions that makes you ponder.</p>
+            <h2 class="center">FREQUENTLY A<span class="red-text text-darken-2">SK QUESTIONS</span></h2>
+            <ul class="collapsible popout" data-collapsible="accordion" data-aos="zoom-in" data-aos-duration="1500">
+                <li>
+                    <div class="collapsible-header white black-text">
+                        <span>How many days will I spend in Japan?</span>
+                        <i class="material-icons expand">expand_more</i>
+                    </div>
+                    <div class="collapsible-body gainsboro grey lighten-3">
+                        <p class="black-text">Spending one week in Japan — 3 days in Tokyo, 3 in Kyoto, and 1 in Osaka — is common for first-time visitors who want to cover the highlights.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header white black-text">
+                        <span>How much is a trip to Japan for 2 weeks?</span>
+                        <i class="material-icons expand">expand_more</i>
+                    </div>
+                    <div class="collapsible-body gainsboro grey lighten-3">
+                        <p class="black-text">On average, a foreign tourist spends about 15,000 yen a day, so a 2-week trip should cost about 210,000 yen.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header white black-text">
+                        <span>What are the requirements to travel Japan?</span>
+                        <i class="material-icons expand">expand_more</i>
+                    </div>
+                    <div class="collapsible-body gainsboro grey lighten-3">
+                        <p class="black-text">You need a valid passport to enter Japan. If you are from a country without a Visa Waiver arrangement with Japan, you also have to apply for a Japanese tourist visa.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header white black-text">
+                        <span>What season is the best to visit Japan?</span>
+                        <i class="material-icons expand">expand_more</i>
+                    </div>
+                    <div class="collapsible-body gainsboro grey lighten-3">
+                        <p class="black-text">In general, the best times to visit Japan are late spring and late autumn, when the scenery is gorgeous and the weather is mild and dry.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header white black-text">
+                        <span>What places will be covered in the trip?</span>
+                        <i class="material-icons expand">expand_more</i>
+                    </div>
+                    <div class="collapsible-body gainsboro grey lighten-3">
+                        <p class="black-text">If you are visiting Japan for the first time, doing to Golden Route Tour, i.e. Tokyo-Osaka-Kyoto, is highly recommended, especially for a week-long trip. If you are staying longer, you can also add day trips to Mt. Fuji, Nara, Himeji, and other nearby cities.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header white black-text">
+                        <span>How can i assure that the travel is safe?</span>
+                        <i class="material-icons expand">expand_more</i>
+                    </div>
+                    <div class="collapsible-body gainsboro grey lighten-3">
+                        <p class="black-text">Because of its low crime and violence rates, Japan is a very safe country to travel to, even if you are a solo traveler.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section section-carousel grey lighten-3 scrollspy" id="places">
+        <p class="center">Here are the other places that you must visit.</p>
+        <h2 class="center">TRAVEL AND INS<span class="red-text text-darken-3">PIRE YOUR LIFE</span></h2>
+        <div class="carousel" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card carousel-item">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/places/cc- fuji.jpeg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator">MOUNT FUJI<i class="material-icons right black-text">more_vert</i></span>
+                    <a href="#modal1" class="modal-trigger">Book Now <i class="material-icons right">arrow_right</i></a>
+                    <div class="floating-div z-depth-2">
+                        <p>5D/4N | People: 8 | Kyoto</p>
+                    </div>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title red-text text-darken-3">MOUNT FUJI<i class="material-icons right">close</i></span>
+                    <p>The country's tallest mountain and one of its most iconic symbols is a popular destination for outdoor recreation. For centuries, Japanese artists and poets have been inspired by Mount Fuji's almost perfectly round form. </p>
+                </div>
+            </div>
+            <div class="card carousel-item">
+                <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/places/cc- nara.jpeg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator">NARA<i class="material-icons right black-text">more_vert</i></span>
+                    <a href="#modal1" class="modal-trigger">Book Now <i class="material-icons right">arrow_right</i></a>
+                    <div class="floating-div z-depth-2">
+                        <p>5D/4N | People: 8 | Kyoto</p>
+                    </div>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title red-text text-darken-3">NARA<i class="material-icons right">close</i></span>
+                    <p>Japan's first permanent capital is famous for housing the Great Buddha, a more than 50-foot-tall bronze statue of Buddha. You'll find this jaw-dropping national treasure in Nara's Todai-ji temple, which is the largest wooden building in the world.</p>
+                </div>
+            </div>
+            <div class="card carousel-item">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/places/cc- fukuoka.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator">FUKUOKA<i class="material-icons right black-text">more_vert</i></span>
+                    <a href="#modal1" class="modal-trigger">Book Now <i class="material-icons right">arrow_right</i></a>
+                    <div class="floating-div z-depth-2">
+                        <p>5D/4N | People: 8 | Kyoto</p>
+                    </div>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title red-text text-darken-3">FUKUOKA<i class="material-icons right">close</i></span>
+                    <p>Located on Kyushu (Japan's third-largest island), Fukuoka offers travelers a mix of urban sprawl, sandy coastlines and ancient temples and shrines.</p>
+                </div>
+            </div>
+            <div class="card carousel-item">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/places/cc- hiroshima.jpeg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator">HIROSHIMA<i class="material-icons right black-text">more_vert</i></span>
+                    <a href="#modal1" class="modal-trigger">Book Now <i class="material-icons right">arrow_right</i></a>
+                    <div class="floating-div z-depth-2">
+                        <p>5D/4N | People: 8 | Kyoto</p>
+                    </div>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title red-text text-darken-3">HIROSHIMA<i class="material-icons right">close</i></span>
+                    <p>For many, Hiroshima brings up memories of war, as the city is where the world's first atomic bomb attack occurred in 1945. But today, Hiroshima is a city of peace, with monuments and memorials like the Peace Memorial Park, the Children's Peace Monument and the UNESCO-certified Atomic Bomb Dome.
+                    </p>
+                </div>
+            </div>
+            <div class="card carousel-item">
+                <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/places/cc- nagasaki.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator">NAGASAKI<i class="material-icons right black-text">more_vert</i></span>
+                    <a href="#modal1" class="modal-trigger">Book Now <i class="material-icons right">arrow_right</i></a>
+                    <div class="floating-div z-depth-2">
+                        <p>5D/4N | People: 8 | Kyoto</p>
+                    </div>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title red-text text-darken-3">NAGASAKI<i class="material-icons right">close</i></span>
+                    <p>Americans might only associate the name Nagasaki with the dropping of the second atomic bomb during World War II, and today this city on the northwestern part of Kyushu island pays homage to the devastation at sights like the Nagasaki Peace Park and the Nagasaki Atomic Bomb Museum. But you'll find an array of fun outdoor attractions here, too.</p>
+                </div>
+            </div>
+            <div class="card carousel-item">
+                <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/places/cc- sapporo.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator">SAPPORO<i class="material-icons right black-text">more_vert</i></span>
+                    <a href="#modal1" class="modal-trigger">Book Now <i class="material-icons right">arrow_right</i></a>
+                    <div class="floating-div z-depth-2">
+                        <p>5D/4N | People: 8 | Kyoto</p>
+                    </div>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title red-text text-darken-3">SAPPORO<i class="material-icons right">close</i></span>
+                    <p>Hokkaido island's capital city is perhaps best known for its ties to the 1972 Winter Olympics. In addition to featuring top-notch ski slopes, the city hosts the Sapporo Snow Festival – with large, elaborate snow sculptures – every February.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-photos scrollspy grey lighten-5" id="photos">
+        <div class="container">
+            <div class="row">
+                <div class="col s6 l4" data-aos="fade-right" data-aos-duration="3000">
+                    <h2>BEST TRAVELER SHARED PHOTO</h2>
+                    <p>Excellent opportunity to sample local cuisine and culture while seeing the main attractions.
+
+                    a good mix of modern, traditional, and historical sights or experiences. RYOKOU handled the transportation arrangements for us, making it simple for us to move between cities and nations. The guide was very helpful and always went above and beyond for the group. Good group size made sure no one missed anything.</p>
+                </div>
+                <div class="col s6 l4" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="images/travelers/travelers-kyoto.jpg" alt="">
+                </div>
+                <div class="col s6 l4" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="images/travelers/travelers-tokyo.jpg" alt="" >
+                </div>
+                <div class="col s6 l4" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="images/travelers/travelers-osaka.jpg" alt="">
+                </div>
+                <div class="col s12 l8" data-aos="fade-left" data-aos-duration="3000">
+                    <iframe width="820" height="325" src="https://www.youtube.com/embed/9DcvOtYug3M" title="[릴레이댄스] LE SSERAFIM(르세라핌) - Impurities (4K)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-footlinks black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l3">
+                    <h5 class="white-text footer-title">Quicklinks</h5>
+                    <ul>
+                        <li><a href="#home" class="white-text">Home</a></li>
+                        <li><a href="#places" class="white-text">Places</a></li>
+                        <li><a href="#book" class="white-text">Booking</a></li>
+                        <li><a href="#faq" class="white-text">FAQ</a></li>
+                        <li><a href="#contact" class="white-text">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 l5">
+                    <h5 class="white-text footer-title">About Us</h5>
+                    <p class="white-text">Ryokou seeks to provide the best quality service and ensures an authentic travel agency from different places in Japan. <span class="new-line">Enrich your travel and experience as we feature different and unique cultures, traditions, and its history.</span></p>
+                </div>
+                <div class="col s12 l3 offset-l1">
+                    <h5 class="white-text footer-title">Get In Touch</h5>
+                    <ul class="mail">
+                        <li><a href="mailto:@ryokou.travel.com" class="white-text"><i class="fa-solid fa-envelope"></i>    @ryokou.travel.com</a></li>
+                        <li><a href="tel:(+63) 910 915 1041" class="white-text"><i class="fa-solid fa-phone"></i>    (+63) 910 915 1041</a></li>
+                        <li><a href="https://www.google.com/maps/place/University+of+Rizal+System,+Antipolo+Campus/@14.6079744,121.0253312,13z/data=!4m5!3m4!1s0x3397bf6aaab19e9d:0x2b0a49e247e195c!8m2!3d14.5713826!4d121.171387" target="_blank" class="white-text"><i class="fa-solid fa-location-dot"></i>    University of Rizal System</a></li>
+                    </ul>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fa-brands fa-facebook white-text"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin white-text"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter white-text"></i></a></li>
+                        <li><a href="https://github.com/robin-dc"><i class="fa-brands fa-github white-text"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="section black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6 left-align">
+                    <p class="white-text">Ryokou 2022 &copy; All rights reserved</p>
+                </div>
+                <div class="col s12 l6 right-align">
+                    <p class="white-text">Website Designed by ryokou  "Building What You Desire"</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <div class="fixed-action-btn">
+        <a href="#home" class="btn-floating red darken-3 btn-large tooltipped pulse" data-tooltip="Back to Top">
+            <i class="material-icons"></i>
+        </a>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="material.min.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.modal').modal({
+                startingTop: '90%',
+                endingTop: '20%'
+            });
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax({
+                responsiveThreshold: 0
+            });
+            $('.tabs').tabs();
+            $('.collapsible').collapsible();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.slider').slider({
+                indicators: false,
+                height: 700,
+                transition:500,
+                interval:5000
+            })
+            $('.tooltipped').tooltip({
+                position: 'left'
+            });
+            $('.scrollspy').scrollSpy();
+        })
+        $('.carousel').carousel({
+            indicators: true,
+        });
+        $(window).scroll(function(){
+            $('nav').toggleClass('scrolled', $(this).scrollTop()>50);
+        })
+        $('.dropdown-trigger').dropdown({
+            coverTrigger:  false
+        });
+        $('input.autocomplete').autocomplete({
+            data:{
+                'Tokyo, Japan':null,
+                'Osaka, Japan':null,
+                'Kyoto, Japan':null,
+                'Hiroshima, Japan':null,
+                'Himeji Castle, Japan':null,
+                'Great Budha, Japan':null,
+                'Mount Fuji, Japan':null,
+                'Golden Pavilion, Japan':null,
+
+            }
+        })
+        AOS.init();
+        const inquireBtn = document.getElementById('inquire-btn')
+        const input = document.querySelectorAll('input')
+        const dropdown = document.querySelector('.dropdown-content')
+
+        inquireBtn.addEventListener('click', function(){
+            inquireBtn.classList.add('disabled')
+            input.forEach(function(input){
+                input.value = ''
+            })  
+        })  
+        function removeInput(){
+            const input = document.querySelectorAll('input')
+            input.forEach(function(input){
+                input.value = ''
+            })  
+        }
+        window.addEventListener('scroll', function(){
+            dropdown.style.display = 'none'
+        })
+    </script>
+</body>
+</html>
