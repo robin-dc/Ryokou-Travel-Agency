@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="grey lighten-5">
-    <!-- NAVIGATION BAR -->
-    <header class="navbar-fixed">
-        <nav class="nav-wrapper black">
+      <!-- NAVIGATION BAR -->
+      <header class="navbar-fixed black">
+        <nav class="nav-wrapper transparent active">
             <div class="container row">
                     <a href="index.html" class="brand-logo">
                         <div class="logo-img"></div>
@@ -48,48 +48,58 @@
             <a href="#email"><span class="black-text email">wintot07@gmail.com</span></a>
             </div>
         </li>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#popular">POPULAR</a></li>
-        <li><a href="#book">BOOKING</a></li>
-        <li><a href="#activity">ACTIVITY</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#places">PLACES</a></li>
-        <li><a href="#photos">PHOTOS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#popular">POPULAR</a></li>
+        <li><a href="index.html#book">BOOKING</a></li>
+        <!-- <li><a class="dropdown-trigger" data-target="dropdown2">MORE
+            <i class="material-icons right">arrow_drop_down</i>
+        </a></li> -->
+        <li><a href="index.html#activity">ACTIVITY</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#places">PLACES</a></li>
+        <li><a href="index.html#photos">PHOTOS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
         <li><a href="#modal1" class="btn red waves-effect darken-3 modal-trigger">EXPLORE</a></li>
     </ul>
 
     <!-- DROPDOWN -->
     <ul id='dropdown1' class='dropdown-content black'>
-        <li><a href="index.html#activity" class="white-text">ACTIVITY</a></li>
-        <li><a href="index.html#faq" class="white-text">FAQ</a></li>
-        <li><a href="index.html#places" class="white-text">PLACES</a></li>
-        <li><a href="index.html#photos" class="white-text">PHOTOS</a></li>
+        <li><a href="#activity" class="white-text">ACTIVITY</a></li>
+        <li><a href="#faq" class="white-text">FAQ</a></li>
+        <li><a href="#places" class="white-text">PLACES</a></li>
+        <li><a href="#photos" class="white-text">PHOTOS</a></li>
+    </ul>
+    <ul id='dropdown2' class='dropdown-content black'>
+        <li><a href="#activity" class="white-text">ACTIVITY</a></li>
+        <li><a href="#faq" class="white-text">FAQ</a></li>
+        <li><a href="#places" class="white-text">PLACES</a></li>
+        <li><a href="#photos" class="white-text">PHOTOS</a></li>
     </ul>
 
     <!-- MODAL POP UP -->
     <div class="modal" id="modal1">
         <div class="container">
             <div class="modal-header right">
-                <a class="btn red darken-3 waves-effect btn-floating"><i class="material-icons">close</i></a>
+                <a class="btn red darken-3 waves-effect btn-floating modal-close"><i class="material-icons">close</i></a>
             </div>
             <div class="modal-content">
                 <a href="index.html" class="brand-logo black-text">
                     <div class="logo-img2"></div></a>
-                <h3 class="black-text center">Enjoy 30% off</h3>
+                <h3 class="black-text center">Enjoy 50% off</h3>
                 <p class="black-text center">Accessible, Affordable, Fast</p>
                 <div class="input-field">
                     <input type="email" placeholder="Enter your email adress to claim the coupon" required class="center">
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="#book" class="btn red darken-3 waves-effect">SCHEDULE A TRIP</a>
+                <a href="#book" class="btn red darken-3 waves-effect modal-close" onclick="removeInput()">SCHEDULE A TRIP</a>
             </div>
             <p class="black-text center"><small>
                 *By completing this form, you agree to receive emails from us and can unsubscribe at any time.
             </small></p>
         </div>
     </div>
+
 
     <section class="section section-contact black">
         <div class="container">
@@ -101,25 +111,25 @@
                             <div class="col s12" >
                                 <div class="input-field">
                                     <input type="text" id="name">
-                                    <label for="name">Fullname</label>
+                                    <label for="name" class="input-label">Fullname</label>
                                 </div>
                             </div>
                             <div class="col s12 m6">
                                 <div class="input-field">
                                     <input type="email" id="email">
-                                    <label for="email">Email</label>
+                                    <label for="email" class="input-label">Email</label>
                                 </div>
                             </div>
                             <div class="col s12 m6">
                                 <div class="input-field">
                                     <input type="text" id="subject">
-                                    <label for="subject">Subject</label>
+                                    <label for="subject" class="input-label">Subject</label>
                                 </div>
                             </div>
                             <div class="col s12">
                                 <div class="input-field">
                                     <textarea id="message" class="materialize-textarea"></textarea>
-                                    <label for="message">Message</label>
+                                    <label for="message" class="input-label">Message</label>
                                 </div>
                             </div>
                             <div class="col s12">
@@ -137,7 +147,7 @@
                     <ul class="mail">
                         <li><a href="mailto:@ryokou.travel.com" class="white-text"><i class="fa-solid fa-envelope"></i>    @ryokou.travel.com</a></li>
                         <li><a href="tel:(+63) 910 915 1041" class="white-text"><i class="fa-solid fa-phone"></i>    (+63) 910 915 1041</a></li>
-                        <li><a href="#home" class="white-text"><i class="fa-solid fa-location-dot"></i>    University of Rizal System</a></li>
+                        <li><a href="https://www.google.com/maps/place/University+of+Rizal+System,+Antipolo+Campus/@14.6079744,121.0253312,13z/data=!4m5!3m4!1s0x3397bf6aaab19e9d:0x2b0a49e247e195c!8m2!3d14.5713826!4d121.171387" class="white-text"><i class="fa-solid fa-location-dot"></i>    University of Rizal System</a></li>
                     </ul>
                     <a href="index.html" class="brand-logo white-text right">
                         <div class="logo-img2"></div>
@@ -174,10 +184,10 @@
                         <li><a href="https://www.google.com/maps/place/University+of+Rizal+System,+Antipolo+Campus/@14.6079744,121.0253312,13z/data=!4m5!3m4!1s0x3397bf6aaab19e9d:0x2b0a49e247e195c!8m2!3d14.5713826!4d121.171387" target="_blank" class="white-text"><i class="fa-solid fa-location-dot"></i>    University of Rizal System</a></li>
                     </ul>
                     <ul class="social-media">
-                        <li><a href="#"><i class="fa-brands fa-facebook white-text"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin white-text"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter white-text"></i></a></li>
-                        <li><a href="https://github.com/robin-dc"><i class="fa-brands fa-github white-text"></i></a></li>
+                        <li><a href="https://www.facebook.com/klaudimer.pantaleon.374?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook white-text"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/robin-dela-cruz-12247023b/" target="_blank"><i class="fa-brands fa-linkedin white-text"></i></a></li>
+                        <li><a href="https://twitter.com/chckn_nggts_?t=eMUh2M6UPPiaGfgO-l1SJw&s=09" target="_blank"><i class="fa-brands fa-twitter white-text"></i></a></li>
+                        <li><a href="https://github.com/robin-dc" target="_blank"><i class="fa-brands fa-github white-text"></i></a></li>
                     </ul>
                 
                 </div>
@@ -198,12 +208,19 @@
         </div>
     </footer>
 
-
-    <!-- <div class="fixed-action-btn">
-        <a href="#home" class="btn-floating red darken-3 btn-large tooltipped pulse" data-tooltip="Back to Top">
-            <i class="material-icons"></i>
-        </a>
-    </div> -->
+    <div class="spinner-overlay">
+        <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-red-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+    </div>
 
 
 
@@ -261,18 +278,41 @@
             $('nav').toggleClass('scrolled', $(this).scrollTop()>50);
         })
         $('.dropdown-trigger').dropdown({
-            coverTrigger:  false
+            coverTrigger:  false,
+            constrainWidth: false,
+            hover:true
         });
         AOS.init();
+
         const submitBtn = document.getElementById('btn-submit')
         const input = document.querySelectorAll('input')
+        const textArea = document.querySelector('textarea')
+        const spinner = document.querySelector('.spinner-overlay')
+        const inputLabel = document.querySelectorAll('.input-label')
 
         submitBtn.addEventListener('click', function(){
             submitBtn.classList.add('disabled')
             input.forEach(function(input){
                 input.value = ''
-            })  
+            })
+            textArea.value = ''
+            inputLabel.forEach(function(label){
+                label.classList.remove('active')
+            })
+            spinner.classList.add('active')
+            setTimeout(function(){
+                spinner.innerHTML = `
+                <div class="preloader-wrapper active">
+                    <i class="material-icons green-text check">check</i>
+                </div>
+                `
+            }, 2000)
+            setTimeout(function(){
+                spinner.classList.remove('active')
+            }, 3000)
         })  
+
+
     </script>
 </body>
 </html>
