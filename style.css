@@ -9,6 +9,22 @@
 body{
     overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+	width: 0.35rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+	background: rgba(255, 0, 0, 0.712);
+    border-radius: 20rem;
+}
+body:hover::-webkit-scrollbar{
+    display:flex;
+    opacity:1;
+    transition: .5s;
+}
 
 /* =========================================================== NAVIGATION */
 nav ul li a{
@@ -279,17 +295,23 @@ input[type=text]+label.active
     color:gray !important;
 }   
 /* ========================================================= FIXED BUTTON BACK TO TOP */
-.fixed-action-btn a{
-    opacity:0.8;
-    animation:bounce 2s ease-in infinite;
+.top.active{
+    /* visibility: hidden; */
+    transform: translateY(100px)
 }
-
+.top{
+    opacity:0.8;
+    /* visibility: visible; */
+    transform:translateY(0px);
+    transition: all .4s;
+    /* animation:bounce 2s ease-in infinite; */
+}
 @keyframes bounce{
     0%{
         transform:translateY(0px);
     }
     50%{
-        transform: translateY(15px);
+        transform: translateY(-15px);
     }
     100%{
         transform:translateY(0px);
@@ -356,6 +378,10 @@ input[type=text]+label.active
 .carousel-item .floating-div small{
     display: flex;
 }
+.section-carousel .card{
+    border-radius: .5rem;
+    overflow: hidden;
+}
 .section-carousel .card-title{
     font-weight: 800 !important;
     background: linear-gradient(180deg, rgba(255, 0, 0, 0.658), black);
@@ -366,6 +392,7 @@ input[type=text]+label.active
     position: relative;
     overflow: hidden;
 }
+
 .section-carousel .card-image::after{
     content: '50% off';
     position: absolute;
@@ -380,6 +407,38 @@ input[type=text]+label.active
     transform: rotate(45deg);
     background-color: #a21318;
     box-shadow: 0 0 7px black;
+}
+.section-carousel .card{
+    background: rgba( 255, 255, 255, 0.25 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+    backdrop-filter: blur( 16px ) !important;
+    -webkit-backdrop-filter: blur( 16px ) !important;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
+}
+.section-carousel .card-reveal p{
+    text-align: justify;
+    padding-top: 1.5rem !important;
+}
+.section-carousel .card-reveal{
+    background-image: url(images/bg-white.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 80px;
+}
+.section-carousel .card-reveal::after{
+    position: absolute;
+    content: '';
+    width:160px;
+    height:160px;
+    top:48%;
+    left:50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.233);
+    z-index: -1;
+    /* margin-top: 40px; */
+    
 }
 /* ========================================================= FREQUENTLY ASK QUESTIONS */
 .collapsible-header{
@@ -405,6 +464,9 @@ input[type=text]+label.active
 
 .section-photos {
     padding: 5rem 0 !important; 
+}
+.section-photos h2{
+    font-size: clamp(2.5rem, 3.2vw, 4rem);
 }
 
 .section-photos .col {
@@ -440,6 +502,10 @@ input[type=text]+label.active
 .section-footlinks{
     padding-top: 4rem !important;
 }
+.section-footlinks a:hover, .social-media li a i:hover{
+    color:red !important;
+    transition: .3s;
+}
 .section-footlinks .row div:nth-child(2) p .new-line{
     display: block;
     margin-top: 1rem !important;
@@ -458,6 +524,7 @@ footer .container{
 footer .row{
     margin: 0 !important;
 }
+
 /* =========================================================================== */
 
 @media only screen and (max-width: 900px){
@@ -496,7 +563,6 @@ footer .row{
         text-align: center !important;
         width:100%;
     }
-
     .section-contact .input-field{
         padding: 0 0 !important;
     }
@@ -507,14 +573,31 @@ footer .row{
         display:flex;
         justify-content: center;
     }
-
+    .section-photos .container{
+        width:100%;
+    }
+    .section-contact{
+        padding:3rem 0 !important;
+    }
+    .section-contact .logo-img2{
+       visibility: hidden;
+    }
+    .datepicker-calendar-container{
+        background-color: white;
+    }
+    .section-photos .col {
+        padding-top:.5rem;
+    }
 
 }
 
 .section-contact{
     position: relative;
     overflow: hidden;
-    padding:5rem 0;
+    padding:6rem 0;
+}
+.section-contact .logo-img2{
+   top:-4.7rem;
 }
 
 .section-contact .container{
@@ -577,4 +660,56 @@ footer .row{
     height:2.5rem;
 }
 
+.spinner-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.418);
+    z-index: 500;
+    visibility:hidden;
+}
+.spinner-overlay.active{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.418);
+    z-index: 500;
+    visibility: visible;
+}
+.spinner-overlay .preloader-wrapper{
+    position:absolute !important;
+    display:grid;
+    place-items: center;
+    z-index: 200 !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    padding:2rem !important;
+    top:0% !important;
+    left:50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+.spinner-overlay.active .preloader-wrapper{
+    transition: .5s;
+    top:50% !important;
+}
+.spinner-layer{
+    padding:1rem;
+}
+.check{
+    position: absolute;
+    font-size: 2.4rem !important;
+    animation:rotate .5s ease-in;
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
 /* #a21318 */
