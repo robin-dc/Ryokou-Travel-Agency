@@ -4937,13 +4937,13 @@
    height:8px;
    width:20px;
    margin:24px 4px;
-   border:1px solid rgba(0, 0, 0, 0.603);
+   border:1px solid black;
    -webkit-transition:background-color .3s;
    transition:background-color .3s;
    border-radius:.5rem;
    }
    .carousel .indicators .indicator-item.active{
-   background-color:rgba(0, 0, 0, 0.795);
+   background-color:#0D47A1;
    }
    .carousel.scrolling .carousel-item .materialboxed,.carousel .carousel-item:not(.active) .materialboxed{
    pointer-events:none
