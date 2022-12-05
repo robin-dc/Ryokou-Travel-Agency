@@ -6,6 +6,9 @@
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Exo 2', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
 }
@@ -43,6 +46,9 @@ nav ul li a{
     background-color: white;
     transform: scaleX(0);
     transition: transform 250ms ease-in;
+}
+.nav-wrapper li a.dropdown-trigger::after{
+    background-color: transparent !important;
 }
 .nav-wrapper li a:hover::after{
     transform: scaleX(1);
@@ -123,8 +129,12 @@ nav ul li a{
     right:.7rem;
     top:.7rem;
 }
-
-/* =========================================================== CAROUSEL SECTION 1 */
+.dropdown-content{
+    transform: translateY(-1px);
+    border-radius: 1rem;
+    padding:1rem 0;
+}
+/* =========================================================== SLIDER SECTION 1 */
 .slider{
     margin-top: -4.5rem;
     background-color:black !important;
@@ -249,6 +259,7 @@ p{
     z-index: 1;
     width:90%;
     margin: 0 auto !important;
+    scroll-padding-top: 10rem !important;
 }
 .section-book > *{
     padding:0 !important;
@@ -295,11 +306,11 @@ input[type=text]+label.active
     color:gray !important;
 }   
 /* ========================================================= FIXED BUTTON BACK TO TOP */
-.top.active{
+.top{
     /* visibility: hidden; */
     transform: translateY(100px)
 }
-.top{
+.top.active{
     opacity:0.8;
     /* visibility: visible; */
     transform:translateY(0px);
@@ -339,7 +350,7 @@ input[type=text]+label.active
 .section-adventure .card img{
     width:7rem;
 }
-/* ========================================================= CAROUSEL AT THE BOTTOM */
+/* ========================================================= CAROUSEL AT THE BOTTOM: OTHER PLACESA */
 .section-carousel{
     padding: 5rem 0 !important;
 }
@@ -349,14 +360,6 @@ input[type=text]+label.active
     display:grid;
     place-items: center;
     border-radius: 100%;
-}
-
-.carousel-item{
-    transition: all .2s;
-    transform: rotate(0deg);
-}
-.carousel-item:hover{
-    transform: rotate(-360deg);
 }
 .carousel-item .card-content{
     padding: 3rem 1.2rem 2rem !important;
@@ -420,7 +423,7 @@ input[type=text]+label.active
     padding-top: 1.5rem !important;
 }
 .section-carousel .card-reveal{
-    background-image: url(images/bg-white.jpg);
+    background-image: url(images/extra/bg-white.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -438,7 +441,27 @@ input[type=text]+label.active
     background-color: rgba(255, 0, 0, 0.233);
     z-index: -1;
     /* margin-top: 40px; */
-    
+}
+.section-carousel .booklink{
+    font-weight: 600;
+}
+.section-carousel .arrow{
+    transform:translateX(0px) rotate(90deg);
+    animation: right 2s ease-in infinite;
+}
+@keyframes right{
+    0%{
+        transform:translateX(-20px) rotate(90deg);
+    }
+    50%{
+        transform:translateX(0px) rotate(90deg);
+    }
+    100%{
+        transform:translateX(-20px) rotate(90deg);
+    }
+}
+.section-carousel .arrow:hover{
+    animation:step-end;
 }
 /* ========================================================= FREQUENTLY ASK QUESTIONS */
 .collapsible-header{
@@ -504,6 +527,7 @@ input[type=text]+label.active
 }
 .section-footlinks a:hover, .social-media li a i:hover{
     color:red !important;
+    cursor: pointer;
     transition: .3s;
 }
 .section-footlinks .row div:nth-child(2) p .new-line{
@@ -590,6 +614,8 @@ footer .row{
     }
 
 }
+/* ========================================================= CONTACT*/
+
 
 .section-contact{
     position: relative;
@@ -712,4 +738,5 @@ footer .row{
         transform:rotate(360deg);
     }
 }
+
 /* #a21318 */
