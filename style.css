@@ -489,7 +489,7 @@ input[type=text]+label.active
     padding: 5rem 0 !important; 
 }
 .section-photos h2{
-    font-size: clamp(2.5rem, 3.2vw, 4rem);
+    font-size: clamp(2.5rem, 3.2vw, 3.6rem);
 }
 
 .section-photos .col {
