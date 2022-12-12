@@ -304,7 +304,7 @@ input[type=text]+label.active
 }
 .autocomplete-content li>*{
     color:gray !important;
-}   
+}
 /* ========================================================= FIXED BUTTON BACK TO TOP */
 .top{
     /* visibility: hidden; */
@@ -330,7 +330,7 @@ input[type=text]+label.active
 }
 /* ========================================================= SECTION ADVENTURE */
 .section-adventure{
-    padding: 5rem 0 4rem !important; 
+    padding: 5rem 0 4rem !important;
 }
 .section-adventure .card{
     border: 1px solid rgba(255, 255, 255, 0.443);
@@ -389,7 +389,7 @@ input[type=text]+label.active
     font-weight: 800 !important;
     background: linear-gradient(180deg, rgba(255, 0, 0, 0.658), black);
     -webkit-background-clip: text;
-    color:transparent;  
+    color:transparent;
 }
 .section-carousel .card-image{
     position: relative;
@@ -486,7 +486,7 @@ input[type=text]+label.active
 /* ========================================================= SECTION PHOTOS */
 
 .section-photos {
-    padding: 5rem 0 !important; 
+    padding: 5rem 0 !important;
 }
 .section-photos h2{
     font-size: clamp(2.5rem, 3.2vw, 3.6rem);
@@ -738,5 +738,9 @@ footer .row{
         transform:rotate(360deg);
     }
 }
-
+@media only screen and (min-width: 1550px){
+    iframe{
+        height:390px;
+    }
+}
 /* #a21318 */
