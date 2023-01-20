@@ -1,6 +1,6 @@
 # Ryokou Travel Agency
 
-Responsive webpage for a japanese travel agency, Learning materialize was the purpose of this project <br> https://ryokou-travel-agency.netlify.app/ .
+Responsive webpage for a japanese travel agency, Learning materialize was the purpose of this project <br> https://ryokou-travel-agency.netlify.app/.
 
 <br>
 
