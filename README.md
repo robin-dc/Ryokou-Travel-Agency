@@ -1,6 +1,6 @@
 # Ryokou Travel Agency : Overview
 
-This project was a collaborative effort with a peer who contributed in the design process and logo creation. Working together not only enhanced my collaboration skills but also provided a valuable learning opportunity to understand Materialize. <br> Creator of logo: <a href=”mailto:klaudimerpantaleon08@gmail.com”>Klaudi Mer Pantaleon</a>.
+This project was a collaborative effort with a peer who contributed in the design process and logo creation. Working together not only enhanced my collaboration skills but also provided a valuable learning opportunity to understand Materialize. <br> Creator of logos: <a href=”mailto:klaudimerpantaleon08@gmail.com”>Klaudi Mer Pantaleon</a>.
 
 <br>
 
